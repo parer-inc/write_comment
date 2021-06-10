@@ -8,6 +8,7 @@ from methods.connection import get_redis, get_cursor
 
 r = get_redis()
 
+
 def write_comment(data):
     """Write comment into database (table comments)
        data must be a 2d array - [n][12]"""
