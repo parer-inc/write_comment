@@ -11,7 +11,7 @@ r = get_redis()
 
 def write_comment(data):
     """Write comment into database (table comments)
-       data must be a 2d array - [n][12]"""
+       data must be a 1d array - [12]"""
     cursor, db = get_cursor()
     if not cursor or not db:
         # log that failed getting cursor
